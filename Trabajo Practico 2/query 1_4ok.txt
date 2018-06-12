@@ -1,0 +1,7 @@
+select distinct p1.id_usuario, p2.id_usuario, 'misma peli'
+from pelis_que_vio p1, pelis_que_vio p2
+where p1.id_usuario < p2.id_usuario -- and p1.id_pelicula = p2.id_pelicula
+and not exists (select 1 from pelis_que_vio p3 where p3.id_usuario = p1.id_usuario and not exists(
+    select 1 from pelis_que_vio p4 where p4.id_pelicula = p3.id_pelicula and p4.id_usuario = p2.id_usuario))
+    and not exists (select 1 from pelis_que_vio p5 where p5.id_usuario = p2.id_usuario and not exists(
+    select 1 from pelis_que_vio p6 where p6.id_pelicula = p5.id_pelicula and p6.id_usuario = p1.id_usuario));

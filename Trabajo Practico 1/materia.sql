@@ -1,0 +1,22 @@
+INSERT INTO materia VALUES 
+('TDLC',57,TRUE,'DKW8438'),
+('EyVS',71,TRUE,'EPI1759'),
+('Proyecto Profecional 2',95,TRUE,'EUZ0724'),
+('ORGA',67,FALSE,'GCK2494'),
+('Ingenieria de Software',69,FALSE,'GPE4346'),
+('Proyecto Profecional 1',80,FALSE,'HME4420'),
+('ORGA 2',60,FALSE,'KLC5618'),
+('Base De Datos 2',62,FALSE,'LLU6191'),
+('Intro a la Programacion',89,FALSE,'MRP2038'),
+('Intro a la Matematica',88,TRUE,'MYY1463'),
+('Matematica Discreta',75,TRUE,'NJB6930'),
+('Programacion 2',65,FALSE,'OBW9153'),
+('Calculo',85,FALSE,'OGQ7555'),
+('Programacion 3',70,TRUE,'ONZ0556'),
+('PSEC',55,TRUE,'OZT9211'),
+('Base de Datos',72,FALSE,'SKH4125'),
+('LyTN',78,FALSE,'UCC8694'),
+('Programacion 1',64,FALSE,'UOV8643'),
+('SOR',64,FALSE,'WRB9233'),
+('Algebra Lineal',72,FALSE,'XOY2057')
+

@@ -1,0 +1,17 @@
+﻿CREATE OR REPLACE FUNCTION public.cargar_bd()
+  RETURNS void AS
+$BODY$BEGIN
+FOR i in 1..850 LOOP
+   insert into ayuda values
+   ((select legajo from alumno where order by random() limit 1),(select m2.codigo from materia as m2 order by random() limit 1)); 
+END LOOP ;
+END;$BODY$
+  LANGUAGE plpgsql VOLATILE
+  COST 100;
+ALTER FUNCTION public.cargar_bd()
+  OWNER TO lucasespinosa;
+
+select cargar_bd();  
+
+select alumno.legajo,alumno.nombre from alumno where (select count(*) from ayuda where alumno.legajo = ayuda.legajo)=5; 
+select ayuda.legajo from ayuda where ayuda.legajo=2984;
